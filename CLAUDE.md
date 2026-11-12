@@ -52,13 +52,14 @@ The site should read as **elegant and product-minded, in the spirit of Apple, Ni
 ## Cutover plan (do in order, never skip step 4)
 1. Build and deploy to a Netlify preview URL.
 2. Dean reviews; iterate.
-3. Point DNS: in Squarespace Domains, set records to Netlify (A `@` → 75.2.60.5, CNAME `www` → `<site>.netlify.app`), add the domain in Netlify, wait for HTTPS.
+3. Point DNS: in Squarespace Domains, ALIAS `@` to apex-loadbalancer.netlify.com and CNAME `www` to `dean-davis-portfolio.netlify.app` (done 2026-11-12).
 4. Verify dean-davis.com serves the new site over HTTPS on every page.
 5. Cancel the Squarespace **website** subscription only. Keep the domain.
 6. Optional later: transfer the domain to Cloudflare Registrar (~$10/yr at cost) before the 2027-03-30 renewal.
 
 ## Status log
 Append a dated line here whenever a milestone lands.
+- 2026-11-12: LAUNCHED. dean-davis.com now served by Netlify over HTTPS (Let's Encrypt). Squarespace DNS: Squarespace Defaults preset deleted; custom ALIAS @ -> apex-loadbalancer.netlify.com and CNAME www -> dean-davis-portfolio.netlify.app. www redirects to apex. Form email alerts to Dean on. Netlify badge turned off. About page is a single text column (photo only on homepage).
 - 2026-11-12: Content and images extracted from Squarespace. Project instructions written.
 - 2026-11-12: v1 built and deployed to Netlify. Site `dean-davis-portfolio` (id 2a067d48-35dd-4403-9f88-cd17064bf38f), preview at https://dean-davis-portfolio.netlify.app. Netlify Forms enabled, `contact` form verified. Not yet on the custom domain.
 - 2026-11-12: v2 (later restyled as v3): cleaner homepage (aligned hero, plain headline, project grid), smaller type scale, Zellerfeld moved to drafts, Calendar Cloud and Smart Planner walkthrough videos added (pulled from the Squarespace CDN, re-encoded, self-hosted in `/public/videos`).
@@ -68,9 +69,9 @@ Append a dated line here whenever a milestone lands.
 
 ## Open items
 - Zellerfeld: pulled from the site at Dean's request (2026-11-12) because it isn't fully built. Content kept in `src/content/drafts.ts`; revisit later.
-- Turn on email notifications for form submissions (Netlify > Project > Forms > Form notifications).
 - Connect a GitHub repo for auto-deploys (currently deployed by upload).
-- Domain cutover (see plan above), then cancel Squarespace website plan.
+- Cancel the Squarespace website plan (renews 2027-03-29). Keep the domain.
+- GitHub repo `deanmrdavis/portfolio-site`: Dean creates it (public, empty), then push and connect Netlify auto-deploy. Local git commit is ready.
 
 ## How to deploy changes
 Edit content in `src/content/`, then redeploy (ask Claude, or push to GitHub once connected). Local preview: `npm install && npm run dev`.
