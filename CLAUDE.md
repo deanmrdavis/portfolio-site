@@ -20,7 +20,7 @@ Replace the Squarespace site at dean-davis.com (~$300+/yr) with a self-hosted si
 
 ## Stack (decided)
 - **Next.js (App Router) + TypeScript + Tailwind CSS**, `output: "export"` (fully static).
-- **Hosting:** Netlify free tier (Dean already uses Netlify for the Zellerfeld app). Currently deployed by upload; plan is a GitHub repo (`deanmrdavis/portfolio-site`) with auto-deploy on push to `main`.
+- **Hosting:** Netlify free tier (Dean already uses Netlify for the Zellerfeld app). Deploys automatically from GitHub (`deanmrdavis/portfolio-site`, public) on every push to `main`.
 - **Contact form:** Netlify Forms (free, 100 submissions/mo), notifications to Dean's email.
 - **Content:** typed data in `src/content/*.ts`. Edit copy there, not inside components.
 - **Domain:** dean-davis.com, registered at Squarespace Domains, paid through **2027-03-30**. Domain billing is separate from the website plan.
@@ -59,6 +59,7 @@ The site should read as **elegant and product-minded, in the spirit of Apple, Ni
 
 ## Status log
 Append a dated line here whenever a milestone lands.
+- 2026-11-12: GitHub repo deanmrdavis/portfolio-site created (public) and linked to Netlify; pushes to main auto-deploy.
 - 2026-11-12: LAUNCHED. dean-davis.com now served by Netlify over HTTPS (Let's Encrypt). Squarespace DNS: Squarespace Defaults preset deleted; custom ALIAS @ -> apex-loadbalancer.netlify.com and CNAME www -> dean-davis-portfolio.netlify.app. www redirects to apex. Form email alerts to Dean on. Netlify badge turned off. About page is a single text column (photo only on homepage).
 - 2026-11-12: Content and images extracted from Squarespace. Project instructions written.
 - 2026-11-12: v1 built and deployed to Netlify. Site `dean-davis-portfolio` (id 2a067d48-35dd-4403-9f88-cd17064bf38f), preview at https://dean-davis-portfolio.netlify.app. Netlify Forms enabled, `contact` form verified. Not yet on the custom domain.
@@ -69,10 +70,8 @@ Append a dated line here whenever a milestone lands.
 
 ## Open items
 - Zellerfeld: pulled from the site at Dean's request (2026-11-12) because it isn't fully built. Content kept in `src/content/drafts.ts`; revisit later.
-- Connect a GitHub repo for auto-deploys (currently deployed by upload).
 - Cancel the Squarespace website plan (renews 2027-03-29). Keep the domain.
-- GitHub repo `deanmrdavis/portfolio-site`: Dean creates it (public, empty), then push and connect Netlify auto-deploy. Local git commit is ready.
 
 ## How to deploy changes
-Edit content in `src/content/`, then redeploy (ask Claude, or push to GitHub once connected). Local preview: `npm install && npm run dev`.
+Edit content in `src/content/`, commit, and push to `main`; Netlify rebuilds and publishes in about a minute. Local preview: `npm install && npm run dev`.
 
