@@ -59,6 +59,7 @@ The site should read as **elegant and product-minded, in the spirit of Apple, Ni
 
 ## Status log
 Append a dated line here whenever a milestone lands.
+- 2026-11-12: Dean cancelled the Squarespace website plan. Only the domain remains at Squarespace.
 - 2026-11-12: GitHub repo deanmrdavis/portfolio-site created (public) and linked to Netlify; pushes to main auto-deploy.
 - 2026-11-12: LAUNCHED. dean-davis.com now served by Netlify over HTTPS (Let's Encrypt). Squarespace DNS: Squarespace Defaults preset deleted; custom ALIAS @ -> apex-loadbalancer.netlify.com and CNAME www -> dean-davis-portfolio.netlify.app. www redirects to apex. Form email alerts to Dean on. Netlify badge turned off. About page is a single text column (photo only on homepage).
 - 2026-11-12: Content and images extracted from Squarespace. Project instructions written.
@@ -70,7 +71,7 @@ Append a dated line here whenever a milestone lands.
 
 ## Open items
 - Zellerfeld: pulled from the site at Dean's request (2026-11-12) because it isn't fully built. Content kept in `src/content/drafts.ts`; revisit later.
-- Cancel the Squarespace website plan (renews 2027-03-29). Keep the domain.
+- Optional: transfer the domain from Squarespace ($20/yr, auto-renews 2027-03-14) to Cloudflare Registrar (~$11/yr). Dean already has a Cloudflare account. Keep Netlify records DNS-only (gray cloud).
 
 ## How to deploy changes
 Edit content in `src/content/`, commit, and push to `main`; Netlify rebuilds and publishes in about a minute. Local preview: `npm install && npm run dev`.
