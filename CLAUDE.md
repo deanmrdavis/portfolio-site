@@ -23,7 +23,7 @@ Replace the Squarespace site at dean-davis.com (~$300+/yr) with a self-hosted si
 - **Hosting:** Netlify free tier (Dean already uses Netlify for the Zellerfeld app). Deploys automatically from GitHub (`deanmrdavis/portfolio-site`, public) on every push to `main`.
 - **Contact form:** Netlify Forms (free, 100 submissions/mo), notifications to Dean's email.
 - **Content:** typed data in `src/content/*.ts`. Edit copy there, not inside components.
-- **Domain:** dean-davis.com, registered at Squarespace Domains, paid through **2027-03-30**. Domain billing is separate from the website plan.
+- **Domain:** dean-davis.com, registered at Squarespace Domains (auto-renews 2027-03-14, $20), DNS hosted on Cloudflare. Transfer of the registration to Cloudflare Registrar in progress.
 
 ## Design direction (set by Dean, 2026-11-12)
 The site should read as **elegant and product-minded, in the spirit of Apple, Nike, Google, and Kith.**
@@ -59,6 +59,7 @@ The site should read as **elegant and product-minded, in the spirit of Apple, Ni
 
 ## Status log
 Append a dated line here whenever a milestone lands.
+- 2026-11-12: DNS moved to Cloudflare (Free plan, account already had nickreturns.com). Nameservers conrad/natasha.ns.cloudflare.com. Records: CNAME @ -> apex-loadbalancer.netlify.com, CNAME www -> dean-davis-portfolio.netlify.app, both DNS only (gray cloud). Registration still at Squarespace; transfer pending Dean unlocking the domain and paying at Cloudflare.
 - 2026-11-12: Dean cancelled the Squarespace website plan. Only the domain remains at Squarespace.
 - 2026-11-12: GitHub repo deanmrdavis/portfolio-site created (public) and linked to Netlify; pushes to main auto-deploy.
 - 2026-11-12: LAUNCHED. dean-davis.com now served by Netlify over HTTPS (Let's Encrypt). Squarespace DNS: Squarespace Defaults preset deleted; custom ALIAS @ -> apex-loadbalancer.netlify.com and CNAME www -> dean-davis-portfolio.netlify.app. www redirects to apex. Form email alerts to Dean on. Netlify badge turned off. About page is a single text column (photo only on homepage).
