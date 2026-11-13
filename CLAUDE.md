@@ -23,7 +23,7 @@ Replace the Squarespace site at dean-davis.com (~$300+/yr) with a self-hosted si
 - **Hosting:** Netlify free tier (Dean already uses Netlify for the Zellerfeld app). Deploys automatically from GitHub (`deanmrdavis/portfolio-site`, public) on every push to `main`.
 - **Contact form:** Netlify Forms (free, 100 submissions/mo), notifications to Dean's email.
 - **Content:** typed data in `src/content/*.ts`. Edit copy there, not inside components.
-- **Domain:** dean-davis.com, registered at Squarespace Domains (auto-renews 2027-03-14, $20), DNS hosted on Cloudflare. Transfer of the registration to Cloudflare Registrar in progress.
+- **Domain:** dean-davis.com, registered at Squarespace Domains (auto-renews 2027-03-14, $20), DNS hosted on Cloudflare. Transfer of the registration to Cloudflare Registrar submitted 2026-11-12 ($11.17/yr, auto-renew on); completes within 7 days or sooner if Dean approves the release at Squarespace.
 
 ## Design direction (set by Dean, 2026-11-12)
 The site should read as **elegant and product-minded, in the spirit of Apple, Nike, Google, and Kith.**
@@ -55,10 +55,11 @@ The site should read as **elegant and product-minded, in the spirit of Apple, Ni
 3. Point DNS: in Squarespace Domains, ALIAS `@` to apex-loadbalancer.netlify.com and CNAME `www` to `dean-davis-portfolio.netlify.app` (done 2026-11-12).
 4. Verify dean-davis.com serves the new site over HTTPS on every page.
 5. Cancel the Squarespace **website** subscription only. Keep the domain.
-6. Optional later: transfer the domain to Cloudflare Registrar (~$10/yr at cost) before the 2027-03-30 renewal.
+6. Transfer the domain to Cloudflare Registrar (~$11/yr at cost): submitted 2026-11-12.
 
 ## Status log
 Append a dated line here whenever a milestone lands.
+- 2026-11-12: Domain transfer to Cloudflare Registrar submitted and paid ($11.17, order 42618b76). Status: in progress. Up to 7 days, faster if Dean approves the release email from Squarespace. Once complete, confirm auto-renew is on in Cloudflare and that dean-davis.com still loads.
 - 2026-11-12: DNS moved to Cloudflare (Free plan, account already had nickreturns.com). Nameservers conrad/natasha.ns.cloudflare.com. Records: CNAME @ -> apex-loadbalancer.netlify.com, CNAME www -> dean-davis-portfolio.netlify.app, both DNS only (gray cloud). Registration still at Squarespace; transfer pending Dean unlocking the domain and paying at Cloudflare.
 - 2026-11-12: Dean cancelled the Squarespace website plan. Only the domain remains at Squarespace.
 - 2026-11-12: GitHub repo deanmrdavis/portfolio-site created (public) and linked to Netlify; pushes to main auto-deploy.
@@ -72,7 +73,7 @@ Append a dated line here whenever a milestone lands.
 
 ## Open items
 - Zellerfeld: pulled from the site at Dean's request (2026-11-12) because it isn't fully built. Content kept in `src/content/drafts.ts`; revisit later.
-- Optional: transfer the domain from Squarespace ($20/yr, auto-renews 2027-03-14) to Cloudflare Registrar (~$11/yr). Dean already has a Cloudflare account. Keep Netlify records DNS-only (gray cloud).
+- Domain transfer to Cloudflare in progress (submitted 2026-11-12). When it completes: confirm it shows under Cloudflare Registrations with auto-renew on, confirm Squarespace no longer bills for it, and update the Domain line above. Keep Netlify records DNS-only (gray cloud).
 
 ## How to deploy changes
 Edit content in `src/content/`, commit, and push to `main`; Netlify rebuilds and publishes in about a minute. Local preview: `npm install && npm run dev`.
