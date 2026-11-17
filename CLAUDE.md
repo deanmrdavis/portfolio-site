@@ -60,6 +60,7 @@ The site should read as **elegant and product-minded, in the spirit of Apple, Ni
 
 ## Status log
 Append a dated line here whenever a milestone lands.
+- 2026-11-16: Project order set to Nick, Calendar Cloud, Smart Planner, Project Ed, Tandem (shipped work ahead of concepts).
 - 2026-11-16: Nick (the returns tracker) added as the first project at `/nick`, content in `src/content/nick.ts`. Tiles take an optional `tileLabel`; Nick's reads "Consumer beta". Homepage and /projects intros now mention the first launched consumer product.
 - 2026-11-12: Domain transfer to Cloudflare Registrar submitted and paid ($11.17, order 42618b76). Status: in progress. Up to 7 days, faster if Dean approves the release email from Squarespace. Once complete, confirm auto-renew is on in Cloudflare and that dean-davis.com still loads.
 - 2026-11-12: DNS moved to Cloudflare (Free plan, account already had nickreturns.com). Nameservers conrad/natasha.ns.cloudflare.com. Records: CNAME @ -> apex-loadbalancer.netlify.com, CNAME www -> dean-davis-portfolio.netlify.app, both DNS only (gray cloud). Registration still at Squarespace; transfer pending Dean unlocking the domain and paying at Cloudflare.

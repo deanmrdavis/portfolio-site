@@ -4,176 +4,6 @@ import { nick } from "./nick";
 
 export const projects: Project[] = [
   nick,
-  visionpro,
-
-  // ───────────────────────────── Tandem ─────────────────────────────
-  {
-    slug: "tandem",
-    title: "Tandem",
-    shortTitle: "Tandem",
-    tagline: "Get matched with providers who fit your style, your goals, and your schedule.",
-    summary:
-      "A lightweight two-sided platform that helps people discover and connect with the right local service provider based on their goals, preferences, and style. Smart matchmaking, built-in messaging, appointment tracking, and a provider dashboard for managing clients and analytics.",
-    image: "/images/tandem.webp",
-    imageAlt: "Tandem homepage with the headline \"Find a Service Provider That Gets You\" and a provider search bar.",
-    kind: "Consumer",
-    spec: [
-      { label: "Role", value: "Solo builder" },
-      { label: "Status", value: "Prototype, built in under 24 hours" },
-      { label: "Category", value: "Two-sided marketplace" },
-      { label: "Stack", value: "Bolt.new, Supabase" },
-    ],
-    links: [{ label: "Open the live app", href: "https://deluxe-crisp-51dfa1.netlify.app/" }],
-    sections: [
-      {
-        id: "context",
-        title: "Context",
-        blocks: [
-          { type: "p", text: "Tandem began as a rapid prototyping experiment. I wanted to see what I could build in a single day using no-code tools, starting with a simple question: what kind of product could solve a real-world problem and make money quickly?" },
-          { type: "p", text: "After exploring different ideas, I focused on a common pain point: finding a coach, tutor, or specialist who truly fits your style and goals. Most platforms are built around task-based transactions. Very few prioritize long-term relationships, personal growth, and fit." },
-          { type: "p", text: "With that in mind, I built Tandem as a lightweight matchmaking tool. It helps users find providers who align with their goals, while giving providers an easy way to manage clients, track progress, and grow their business." },
-          {
-            type: "facts",
-            items: [
-              { label: "Target audience", text: "Individuals seeking personal growth, independent service providers." },
-              { label: "Purpose", text: "To explore how quickly I could go from idea to prototype using no-code tools while solving a real-world problem with clear monetization potential." },
-            ],
-          },
-          { type: "p", text: "Tandem was built to help people find the right kind of support, whether physical, mental, or educational, by simplifying how we connect with coaches, tutors, and service providers. It focuses on removing friction, building trust, and making human connections feel more accessible." },
-        ],
-      },
-      {
-        id: "problem",
-        title: "Problem statement",
-        blocks: [
-          { type: "p", text: "Finding the right service provider is frustrating and time-consuming. Whether someone is searching for a fitness coach, a tutor, or a wellness expert, the current options are fragmented, overwhelming, and often impersonal. Most platforms prioritize transactions instead of trust, leaving users with too many choices and not enough clarity. Providers are also left without the tools they need to build long-term client relationships." },
-          { type: "p", text: "Tandem solves this by offering a simple and personalized matchmaking experience that connects people to providers who align with their goals, style, and preferences." },
-          { type: "h", text: "Mock KPI goals" },
-          {
-            type: "list",
-            items: [
-              { label: "Time to match", text: "Help users find and message a provider in under 5 minutes" },
-              { label: "Provider engagement", text: "At least 50 percent of providers log in weekly and respond to messages" },
-              { label: "Conversion rate", text: "20 percent of site visitors complete the client intake form" },
-              { label: "Provider satisfaction", text: "75 percent or higher satisfaction from a quick dashboard feedback prompt" },
-              { label: "Prototype build time", text: "Launch a working version of the platform within 24 hours" },
-            ],
-          },
-          { type: "note", text: "Since this is a prototype, mock KPIs and results are represented as part of this case study." },
-        ],
-      },
-      {
-        id: "approach",
-        title: "Approach",
-        blocks: [
-          { type: "h", text: "Research and analysis" },
-          { type: "p", text: "In exploring the opportunity to build a simple and scalable matchmaking platform, I began with a focused objective: create a lightweight MVP that could deliver immediate value, prove demand, and open pathways for monetization. With time as a constraint and clarity as the priority, the approach centered around rapid ideation, user-focused problem definition, and iterative no-code development." },
-          { type: "h", text: "Evaluation of the market landscape" },
-          { type: "p", text: "To determine the best starting point, I assessed the current landscape of service discovery tools. Platforms like Thumbtack, TaskRabbit, and Yelp offer broad provider access but often prioritize volume over personalization. These platforms are optimized for transactional, one-off tasks, and lack tools for relationship-based services such as coaching, tutoring, or personal development. Many also carry high barriers to entry for new providers, require steep fees, or lack trust-building tools for users." },
-          { type: "p", text: "This evaluation revealed a clear gap in the market: an approachable, trust-first solution for users seeking consistent support, and a lightweight business toolkit for providers working independently or in small teams." },
-          { type: "h", text: "Product strategy and framing" },
-          { type: "p", text: "With the target problem identified, I outlined a product strategy focused on speed to value and expandability. The first version of Tandem would focus on fitness and tutoring as early verticals, while establishing a foundation that could scale to include other services like wellness coaching, language instruction, and creative skills training." },
-          {
-            type: "list",
-            items: [
-              { text: "Starting with a two-sided structure, giving both users and providers tailored experiences" },
-              { text: "Prioritizing core user journeys like onboarding, matching, and communication" },
-              { text: "Using a no-code toolset (Bolt.new and Supabase) to reduce build time and increase flexibility" },
-              { text: "Including basic analytics and communication features to simulate real business utility for providers" },
-              { text: "Designing a brand and name flexible enough to grow beyond the initial niche" },
-            ],
-          },
-          { type: "h", text: "UX and functional priorities" },
-          {
-            type: "list",
-            items: [
-              { text: "A \"Match Me\" form that collects user preferences across goals, experience level, and availability" },
-              { text: "A provider sign-up and dashboard experience that includes a schedule view, client list, and quick messaging access" },
-              { text: "Smart, AI-assisted matching logic that pairs users with appropriate providers based on multiple data points" },
-              { text: "A clean, modern UI that reflects approachability and professional trust" },
-            ],
-          },
-          { type: "p", text: "The initial prototype of Tandem was developed and deployed in under 24 hours. The app includes a functional onboarding flow, basic two-sided matching, a working provider dashboard, and a plan for multiple monetization paths. The process validated that real, usable tools can be created in compressed timeframes when guided by clear goals and user needs." },
-          { type: "h", text: "Strategy" },
-          { type: "p", text: "Vision: to simplify the way people discover and connect with service providers by creating a human-centered platform that emphasizes personalization, trust, and ease of use. Tandem aims to empower individuals in their personal growth journeys while giving providers the tools to build sustainable, client-focused businesses." },
-          {
-            type: "list",
-            items: [
-              { label: "Personalized matching", text: "Design a smart intake and matching flow that connects users with providers based on goals, availability, preferences, and communication style." },
-              { label: "Two-sided experience", text: "Build parallel experiences for users and providers, with tailored features that support discovery, communication, and ongoing engagement." },
-              { label: "Provider tools", text: "Develop a lightweight dashboard for providers that includes appointment scheduling, client management, basic analytics, and messaging." },
-              { label: "Trust and simplicity", text: "Create an intuitive, accessible interface that builds user confidence and lowers friction during onboarding and engagement." },
-            ],
-          },
-        ],
-      },
-      {
-        id: "solution",
-        title: "Solution",
-        blocks: [
-          { type: "p", text: "Tandem was designed to help users find service providers who align with their goals, preferences, and lifestyle. The platform streamlines discovery, communication, and client management for both sides of the marketplace." },
-          { type: "h", text: "Backend" },
-          {
-            type: "list",
-            items: [
-              { label: "Scalable no-code stack", text: "Supabase provides user authentication, database storage, and real-time updates, enabling rapid development while leaving room for growth." },
-              { label: "Two-sided architecture", text: "Separate logic and database schemas for users and providers support different onboarding flows, dashboards, and interaction modes under one experience." },
-              { label: "Smart matching logic", text: "Intake responses are matched to provider profiles based on availability, service category, goals, and preference tags. Matching can later be enhanced with AI." },
-              { label: "Integrated messaging", text: "Built on Supabase's real-time capabilities, providers and clients message directly through their dashboards, with attachment uploads and a record of every interaction." },
-            ],
-          },
-          { type: "h", text: "Frontend" },
-          {
-            type: "list",
-            items: [
-              { label: "Clean, modern interface", text: "A minimal, welcoming design system built in Bolt.new that keeps users focused on their next step." },
-              { label: "Provider dashboard", text: "Upcoming appointments, client lists, messages, and analytics showing client activity and income trends." },
-              { label: "User intake flow", text: "A dynamic form that collects preferences, goals, and availability, building trust through a personalized approach." },
-              { label: "Quick actions menu", text: "A floating bar that lets providers switch between messaging, schedule, and client details." },
-            ],
-          },
-          { type: "h", text: "Challenges and iterations" },
-          {
-            type: "list",
-            items: [
-              { label: "Designing for two audiences in one platform", text: "Parallel but clearly defined interfaces using conditional logic, with shared components like messaging and scheduling reused with role-specific labels. Ongoing user testing informed adjustments to flow and layout." },
-              { label: "Matching without advanced AI", text: "The intake form was refined to capture more structured inputs, enabling smarter tag-based filtering. Plans were documented for a conversational assistant that could assess learning styles, personality fit, and goals." },
-              { label: "Real-time messaging in a no-code stack", text: "Supabase real-time subscriptions sync messages instantly in the Bolt interface, with Supabase storage handling attachments." },
-              { label: "Business tools without building a CRM", text: "The provider dashboard ships with just enough: a weekly schedule, income tracker, and client list, with feedback and booking history planned." },
-              { label: "A brand that can grow", text: "An early barbell icon made the product feel narrowly focused. The logo was reworked around connection and duality, and the palette shifted from bold fitness tones to greens and neutrals that signal growth and trust." },
-            ],
-          },
-        ],
-      },
-      {
-        id: "results",
-        title: "Mock results and learnings",
-        blocks: [
-          {
-            type: "results",
-            items: [
-              { label: "Time to match", goal: "Find and message a provider in under 5 minutes", outcome: "Users completed the matchmaking flow and sent a first message in about 4 minutes" },
-              { label: "Provider engagement", goal: "At least 50% of providers log in weekly and respond", outcome: "Simulated tracking suggested 60% of active providers returned in week one and replied to a new client" },
-              { label: "Conversion rate", goal: "20% of visitors complete the intake form", outcome: "Early testing with simulated traffic indicated a projected 26%" },
-              { label: "Provider satisfaction", goal: "75% or higher on a dashboard feedback prompt", outcome: "Initial usability tests showed 78% positive response" },
-            ],
-          },
-          { type: "note", text: "Results are mock or simulated, as this was a prototype." },
-          { type: "h", text: "Lessons learned" },
-          {
-            type: "list",
-            items: [
-              { label: "Design for dual audiences from the start", text: "Planning for both roles early avoided rework and delivered value on both sides of the marketplace." },
-              { label: "Balance simplicity with flexibility", text: "Lightweight intake and dashboard tools felt approachable while leaving room for deeper customization." },
-              { label: "Build fast, then refine", text: "Launching an MVP in under 24 hours showed the power of rapid prototyping, and the importance of iterating on feedback rather than aiming for perfection upfront." },
-              { label: "Plan for scale beyond one industry", text: "Flexible branding, architecture, and matching logic position Tandem to expand without major changes." },
-              { label: "Don't overbuild the first version", text: "Staying focused on matching, messaging, and dashboards avoided scope creep and kept the build achievable." },
-            ],
-          },
-        ],
-      },
-    ],
-  },
 
   // ───────────────────────────── Calendar Cloud ─────────────────────────────
   {
@@ -458,6 +288,176 @@ export const projects: Project[] = [
               { label: "Ensure scalability", text: "Early architecture choices made multiple integrations and growing data volumes manageable." },
               { label: "Adapt to external constraints", text: "Coupa's API limits showed the value of flexible solutions and proactive vendor communication." },
               { label: "Keep collaborating", text: "Ongoing work with finance and marketing ops was essential to getting reporting and budget adherence right." },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  visionpro,
+
+  // ───────────────────────────── Tandem ─────────────────────────────
+  {
+    slug: "tandem",
+    title: "Tandem",
+    shortTitle: "Tandem",
+    tagline: "Get matched with providers who fit your style, your goals, and your schedule.",
+    summary:
+      "A lightweight two-sided platform that helps people discover and connect with the right local service provider based on their goals, preferences, and style. Smart matchmaking, built-in messaging, appointment tracking, and a provider dashboard for managing clients and analytics.",
+    image: "/images/tandem.webp",
+    imageAlt: "Tandem homepage with the headline \"Find a Service Provider That Gets You\" and a provider search bar.",
+    kind: "Consumer",
+    spec: [
+      { label: "Role", value: "Solo builder" },
+      { label: "Status", value: "Prototype, built in under 24 hours" },
+      { label: "Category", value: "Two-sided marketplace" },
+      { label: "Stack", value: "Bolt.new, Supabase" },
+    ],
+    links: [{ label: "Open the live app", href: "https://deluxe-crisp-51dfa1.netlify.app/" }],
+    sections: [
+      {
+        id: "context",
+        title: "Context",
+        blocks: [
+          { type: "p", text: "Tandem began as a rapid prototyping experiment. I wanted to see what I could build in a single day using no-code tools, starting with a simple question: what kind of product could solve a real-world problem and make money quickly?" },
+          { type: "p", text: "After exploring different ideas, I focused on a common pain point: finding a coach, tutor, or specialist who truly fits your style and goals. Most platforms are built around task-based transactions. Very few prioritize long-term relationships, personal growth, and fit." },
+          { type: "p", text: "With that in mind, I built Tandem as a lightweight matchmaking tool. It helps users find providers who align with their goals, while giving providers an easy way to manage clients, track progress, and grow their business." },
+          {
+            type: "facts",
+            items: [
+              { label: "Target audience", text: "Individuals seeking personal growth, independent service providers." },
+              { label: "Purpose", text: "To explore how quickly I could go from idea to prototype using no-code tools while solving a real-world problem with clear monetization potential." },
+            ],
+          },
+          { type: "p", text: "Tandem was built to help people find the right kind of support, whether physical, mental, or educational, by simplifying how we connect with coaches, tutors, and service providers. It focuses on removing friction, building trust, and making human connections feel more accessible." },
+        ],
+      },
+      {
+        id: "problem",
+        title: "Problem statement",
+        blocks: [
+          { type: "p", text: "Finding the right service provider is frustrating and time-consuming. Whether someone is searching for a fitness coach, a tutor, or a wellness expert, the current options are fragmented, overwhelming, and often impersonal. Most platforms prioritize transactions instead of trust, leaving users with too many choices and not enough clarity. Providers are also left without the tools they need to build long-term client relationships." },
+          { type: "p", text: "Tandem solves this by offering a simple and personalized matchmaking experience that connects people to providers who align with their goals, style, and preferences." },
+          { type: "h", text: "Mock KPI goals" },
+          {
+            type: "list",
+            items: [
+              { label: "Time to match", text: "Help users find and message a provider in under 5 minutes" },
+              { label: "Provider engagement", text: "At least 50 percent of providers log in weekly and respond to messages" },
+              { label: "Conversion rate", text: "20 percent of site visitors complete the client intake form" },
+              { label: "Provider satisfaction", text: "75 percent or higher satisfaction from a quick dashboard feedback prompt" },
+              { label: "Prototype build time", text: "Launch a working version of the platform within 24 hours" },
+            ],
+          },
+          { type: "note", text: "Since this is a prototype, mock KPIs and results are represented as part of this case study." },
+        ],
+      },
+      {
+        id: "approach",
+        title: "Approach",
+        blocks: [
+          { type: "h", text: "Research and analysis" },
+          { type: "p", text: "In exploring the opportunity to build a simple and scalable matchmaking platform, I began with a focused objective: create a lightweight MVP that could deliver immediate value, prove demand, and open pathways for monetization. With time as a constraint and clarity as the priority, the approach centered around rapid ideation, user-focused problem definition, and iterative no-code development." },
+          { type: "h", text: "Evaluation of the market landscape" },
+          { type: "p", text: "To determine the best starting point, I assessed the current landscape of service discovery tools. Platforms like Thumbtack, TaskRabbit, and Yelp offer broad provider access but often prioritize volume over personalization. These platforms are optimized for transactional, one-off tasks, and lack tools for relationship-based services such as coaching, tutoring, or personal development. Many also carry high barriers to entry for new providers, require steep fees, or lack trust-building tools for users." },
+          { type: "p", text: "This evaluation revealed a clear gap in the market: an approachable, trust-first solution for users seeking consistent support, and a lightweight business toolkit for providers working independently or in small teams." },
+          { type: "h", text: "Product strategy and framing" },
+          { type: "p", text: "With the target problem identified, I outlined a product strategy focused on speed to value and expandability. The first version of Tandem would focus on fitness and tutoring as early verticals, while establishing a foundation that could scale to include other services like wellness coaching, language instruction, and creative skills training." },
+          {
+            type: "list",
+            items: [
+              { text: "Starting with a two-sided structure, giving both users and providers tailored experiences" },
+              { text: "Prioritizing core user journeys like onboarding, matching, and communication" },
+              { text: "Using a no-code toolset (Bolt.new and Supabase) to reduce build time and increase flexibility" },
+              { text: "Including basic analytics and communication features to simulate real business utility for providers" },
+              { text: "Designing a brand and name flexible enough to grow beyond the initial niche" },
+            ],
+          },
+          { type: "h", text: "UX and functional priorities" },
+          {
+            type: "list",
+            items: [
+              { text: "A \"Match Me\" form that collects user preferences across goals, experience level, and availability" },
+              { text: "A provider sign-up and dashboard experience that includes a schedule view, client list, and quick messaging access" },
+              { text: "Smart, AI-assisted matching logic that pairs users with appropriate providers based on multiple data points" },
+              { text: "A clean, modern UI that reflects approachability and professional trust" },
+            ],
+          },
+          { type: "p", text: "The initial prototype of Tandem was developed and deployed in under 24 hours. The app includes a functional onboarding flow, basic two-sided matching, a working provider dashboard, and a plan for multiple monetization paths. The process validated that real, usable tools can be created in compressed timeframes when guided by clear goals and user needs." },
+          { type: "h", text: "Strategy" },
+          { type: "p", text: "Vision: to simplify the way people discover and connect with service providers by creating a human-centered platform that emphasizes personalization, trust, and ease of use. Tandem aims to empower individuals in their personal growth journeys while giving providers the tools to build sustainable, client-focused businesses." },
+          {
+            type: "list",
+            items: [
+              { label: "Personalized matching", text: "Design a smart intake and matching flow that connects users with providers based on goals, availability, preferences, and communication style." },
+              { label: "Two-sided experience", text: "Build parallel experiences for users and providers, with tailored features that support discovery, communication, and ongoing engagement." },
+              { label: "Provider tools", text: "Develop a lightweight dashboard for providers that includes appointment scheduling, client management, basic analytics, and messaging." },
+              { label: "Trust and simplicity", text: "Create an intuitive, accessible interface that builds user confidence and lowers friction during onboarding and engagement." },
+            ],
+          },
+        ],
+      },
+      {
+        id: "solution",
+        title: "Solution",
+        blocks: [
+          { type: "p", text: "Tandem was designed to help users find service providers who align with their goals, preferences, and lifestyle. The platform streamlines discovery, communication, and client management for both sides of the marketplace." },
+          { type: "h", text: "Backend" },
+          {
+            type: "list",
+            items: [
+              { label: "Scalable no-code stack", text: "Supabase provides user authentication, database storage, and real-time updates, enabling rapid development while leaving room for growth." },
+              { label: "Two-sided architecture", text: "Separate logic and database schemas for users and providers support different onboarding flows, dashboards, and interaction modes under one experience." },
+              { label: "Smart matching logic", text: "Intake responses are matched to provider profiles based on availability, service category, goals, and preference tags. Matching can later be enhanced with AI." },
+              { label: "Integrated messaging", text: "Built on Supabase's real-time capabilities, providers and clients message directly through their dashboards, with attachment uploads and a record of every interaction." },
+            ],
+          },
+          { type: "h", text: "Frontend" },
+          {
+            type: "list",
+            items: [
+              { label: "Clean, modern interface", text: "A minimal, welcoming design system built in Bolt.new that keeps users focused on their next step." },
+              { label: "Provider dashboard", text: "Upcoming appointments, client lists, messages, and analytics showing client activity and income trends." },
+              { label: "User intake flow", text: "A dynamic form that collects preferences, goals, and availability, building trust through a personalized approach." },
+              { label: "Quick actions menu", text: "A floating bar that lets providers switch between messaging, schedule, and client details." },
+            ],
+          },
+          { type: "h", text: "Challenges and iterations" },
+          {
+            type: "list",
+            items: [
+              { label: "Designing for two audiences in one platform", text: "Parallel but clearly defined interfaces using conditional logic, with shared components like messaging and scheduling reused with role-specific labels. Ongoing user testing informed adjustments to flow and layout." },
+              { label: "Matching without advanced AI", text: "The intake form was refined to capture more structured inputs, enabling smarter tag-based filtering. Plans were documented for a conversational assistant that could assess learning styles, personality fit, and goals." },
+              { label: "Real-time messaging in a no-code stack", text: "Supabase real-time subscriptions sync messages instantly in the Bolt interface, with Supabase storage handling attachments." },
+              { label: "Business tools without building a CRM", text: "The provider dashboard ships with just enough: a weekly schedule, income tracker, and client list, with feedback and booking history planned." },
+              { label: "A brand that can grow", text: "An early barbell icon made the product feel narrowly focused. The logo was reworked around connection and duality, and the palette shifted from bold fitness tones to greens and neutrals that signal growth and trust." },
+            ],
+          },
+        ],
+      },
+      {
+        id: "results",
+        title: "Mock results and learnings",
+        blocks: [
+          {
+            type: "results",
+            items: [
+              { label: "Time to match", goal: "Find and message a provider in under 5 minutes", outcome: "Users completed the matchmaking flow and sent a first message in about 4 minutes" },
+              { label: "Provider engagement", goal: "At least 50% of providers log in weekly and respond", outcome: "Simulated tracking suggested 60% of active providers returned in week one and replied to a new client" },
+              { label: "Conversion rate", goal: "20% of visitors complete the intake form", outcome: "Early testing with simulated traffic indicated a projected 26%" },
+              { label: "Provider satisfaction", goal: "75% or higher on a dashboard feedback prompt", outcome: "Initial usability tests showed 78% positive response" },
+            ],
+          },
+          { type: "note", text: "Results are mock or simulated, as this was a prototype." },
+          { type: "h", text: "Lessons learned" },
+          {
+            type: "list",
+            items: [
+              { label: "Design for dual audiences from the start", text: "Planning for both roles early avoided rework and delivered value on both sides of the marketplace." },
+              { label: "Balance simplicity with flexibility", text: "Lightweight intake and dashboard tools felt approachable while leaving room for deeper customization." },
+              { label: "Build fast, then refine", text: "Launching an MVP in under 24 hours showed the power of rapid prototyping, and the importance of iterating on feedback rather than aiming for perfection upfront." },
+              { label: "Plan for scale beyond one industry", text: "Flexible branding, architecture, and matching logic position Tandem to expand without major changes." },
+              { label: "Don't overbuild the first version", text: "Staying focused on matching, messaging, and dashboards avoided scope creep and kept the build achievable." },
             ],
           },
         ],
