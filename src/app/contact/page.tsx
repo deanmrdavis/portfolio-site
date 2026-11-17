@@ -22,7 +22,7 @@ export default function ContactPage() {
           </div>
           <div>
             <dt className="text-[0.85rem] text-steel">LinkedIn</dt>
-            <dd className="mt-1"><a className="prose-link" href={site.linkedin} target="_blank" rel="noopener noreferrer">dean-davis-58002469</a></dd>
+            <dd className="mt-1"><a className="prose-link" href={site.linkedin} target="_blank" rel="noopener noreferrer">Dean Davis</a></dd>
           </div>
           <div>
             <dt className="text-[0.85rem] text-steel">Based in</dt>

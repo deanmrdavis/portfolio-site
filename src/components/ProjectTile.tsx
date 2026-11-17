@@ -11,7 +11,7 @@ export function ProjectTile({ project, size = "md", headingLevel = 3 }: { projec
   return (
     <article className="group flex flex-col overflow-hidden rounded-[28px] bg-mist text-center">
       <div className={`px-8 ${lg ? "pt-16 sm:pt-20" : "pt-12"}`}>
-        <p className="text-[0.85rem] text-steel">{project.kind === "B2B" ? "Shipped to production" : "Consumer concept"}</p>
+        <p className="text-[0.85rem] text-steel">{project.tileLabel ?? (project.kind === "B2B" ? "Shipped to production" : "Consumer concept")}</p>
         <H className={`display mt-2 ${lg ? "text-[clamp(2rem,4.5vw,3.25rem)]" : "text-[clamp(1.75rem,3vw,2.25rem)]"}`}>
           {project.title}
         </H>

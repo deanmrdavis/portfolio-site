@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       <div className="text-center">
         <h1 className="display text-[clamp(2.5rem,6vw,4.5rem)]">Projects.</h1>
         <p className="mx-auto mt-4 max-w-[52ch] text-[1.2rem] leading-relaxed text-steel">
-          Platforms I helped take from research to production, and consumer concepts I&apos;ve researched and prototyped on my own.
+          Platforms I helped take from research to production, my first launched consumer product, and concepts I&apos;ve researched and prototyped on my own.
         </p>
       </div>
       <div className="mt-16 space-y-5">

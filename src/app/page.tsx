@@ -31,7 +31,7 @@ export default function Home() {
         <div className="text-center">
           <h2 id="work" className="display text-[clamp(2.25rem,4.5vw,3.5rem)]">Selected work.</h2>
           <p className="mx-auto mt-3 max-w-[48ch] text-[1.15rem] text-steel">
-            Platforms I took from research to production, and consumer concepts I've prototyped on my own.
+            Platforms I took from research to production, my first launched consumer product, and concepts I've prototyped on my own.
           </p>
         </div>
         <div className="mt-14 grid gap-5 md:grid-cols-2">
