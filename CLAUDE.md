@@ -33,7 +33,7 @@ The site should read as **elegant and product-minded, in the spirit of Apple, Ni
 - Case studies are product pages: centered title and tagline, hero screenshot tile, "at a glance" spec strip, calm reading column (~66ch) with a sticky section nav.
 - Restrained sizes: page titles max ~4.5rem, section headings ~2.25rem. Clean grid alignment, no zig-zag rows, generous whitespace.
 - Homepage headline states plainly who Dean is ("Product manager with a decade of building tools people rely on."). No casual hooks.
-- Be honest about experience: Dean has not yet shipped a consumer product to real users. Shipped work is B2B (Calendar Cloud, Smart Planner); consumer work is concepts and prototypes (Project Ed, Tandem). His first real consumer product, a returns tracker, is in progress; add it when it ships.
+- Be honest about experience: shipped B2B work is Calendar Cloud and Smart Planner. Dean's first launched consumer product is Nick (nickreturns.com), in beta with a small first group of testers since 2026-11-16: no outcome metrics yet, and the page must say so plainly rather than imply traction. Other consumer work is concepts and prototypes (Project Ed, Tandem).
 - Motion: one subtle hero settle on load; respect reduced motion.
 
 ## Site map
@@ -46,6 +46,7 @@ The site should read as **elegant and product-minded, in the spirit of Apple, Ni
 | `/tandem` | Tandem case study (mock KPIs labeled) |
 | `/calendarcloud` | Calendar Cloud case study + walkthrough video |
 | `/smartplanner` | Smart Planner case study + walkthrough video |
+| `/nick` | Nick case study (beta, no outcome metrics yet); first on the homepage and /projects |
 | `/certifications` | 7 certificates (old URL `/projects-1` redirects) |
 | `/contact` | Netlify form + email + LinkedIn |
 
@@ -59,6 +60,7 @@ The site should read as **elegant and product-minded, in the spirit of Apple, Ni
 
 ## Status log
 Append a dated line here whenever a milestone lands.
+- 2026-11-16: Nick (the returns tracker) added as the first project at `/nick`, content in `src/content/nick.ts`. Tiles take an optional `tileLabel`; Nick's reads "Consumer beta". Homepage and /projects intros now mention the first launched consumer product.
 - 2026-11-12: Domain transfer to Cloudflare Registrar submitted and paid ($11.17, order 42618b76). Status: in progress. Up to 7 days, faster if Dean approves the release email from Squarespace. Once complete, confirm auto-renew is on in Cloudflare and that dean-davis.com still loads.
 - 2026-11-12: DNS moved to Cloudflare (Free plan, account already had nickreturns.com). Nameservers conrad/natasha.ns.cloudflare.com. Records: CNAME @ -> apex-loadbalancer.netlify.com, CNAME www -> dean-davis-portfolio.netlify.app, both DNS only (gray cloud). Registration still at Squarespace; transfer pending Dean unlocking the domain and paying at Cloudflare.
 - 2026-11-12: Dean cancelled the Squarespace website plan. Only the domain remains at Squarespace.

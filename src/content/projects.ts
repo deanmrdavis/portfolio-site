@@ -1,7 +1,9 @@
 import type { Project } from "./types";
 import { visionpro } from "./visionpro";
+import { nick } from "./nick";
 
 export const projects: Project[] = [
+  nick,
   visionpro,
 
   // ───────────────────────────── Tandem ─────────────────────────────

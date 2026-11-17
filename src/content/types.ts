@@ -28,6 +28,8 @@ export type Project = {
   image: string;
   imageAlt: string;
   kind: "Consumer" | "B2B";
+  // Optional override for the small label above the title on project tiles.
+  tileLabel?: string;
   spec: Spec[];
   links?: { label: string; href: string }[];
   sections: Section[];
